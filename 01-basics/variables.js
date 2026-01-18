@@ -1,3 +1,16 @@
+# JavaScript Practice Repo
+
+## JavaScript History / Intro
+
+- Developed by Brendan Eich in 1995
+- Used for Frontend (browser) and Backend (Node.js)
+
+## Frontend Basics
+- body, h1, script tags etc.
+
+## Backend Basics
+- Node.js / console.log etc.
+
 // ================================
 // Day 1: Basic Variables Practice
 // ================================
