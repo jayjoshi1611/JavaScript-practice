@@ -1,0 +1,101 @@
+// JavaScript Objects Practice
+// ===============================
+
+// 1️⃣ Nested Object
+let person1 = {
+    name: "Jay",
+    address: {
+        city: "Anand",
+        state: "Gujarat",
+        country: "India"
+    }
+};
+
+console.log(person1.address.city); // access nested value
+
+// 2️⃣ Modify nested property
+person1.address.city = "ANAND";
+console.log(person1.address.city);
+
+// 3️⃣ Add new property
+person1.pincode = 388120;
+console.log(person1);
+
+// 4️⃣ Delete property
+delete person1.pincode;
+console.log(person1);
+
+// ===============================
+// 5️⃣ this keyword in object
+// ===============================
+let person2 = {
+    name: "Jay",
+    age: 25,
+    greet: function () {
+        console.log("I am " + this.name);
+    }
+};
+
+person2.greet();
+
+// ===============================
+// 6️⃣ Iterating over an object
+// ===============================
+for (let key in person2) {
+    console.log(key, ":", person2[key]);
+}
+
+// ===============================
+// 7️⃣ JavaScript Set
+// ===============================
+const fruits = new Set([
+    "apple",
+    "banana",
+    "watermelon",
+    "banana",
+    "apple",
+    "grapes"
+]);
+
+console.log(fruits); // no duplicates
+
+fruits.add("pineapple"); // add
+console.log(fruits);
+
+fruits.delete("banana"); // delete
+console.log(fruits);
+
+console.log(fruits.has("apple")); // has → true / false
+
+// ===============================
+// 8️⃣ JavaScript Map
+// ===============================
+const userMap = new Map();
+
+userMap.set("name", "Jay");
+userMap.set("age", 25);
+userMap.set("city", "Anand");
+
+console.log(userMap);
+console.log(userMap.get("name"));
+console.log(userMap.has("age"));
+
+userMap.delete("city");
+console.log(userMap);
+
+// ===============================
+// 9️⃣ JSON Conversion
+// ===============================
+const Person = {
+    name: "Jay",
+    age: 25,
+    isStudent: false
+};
+
+// Object ➝ JSON
+const PersonJSON = JSON.stringify(Person);
+console.log(PersonJSON);
+
+// JSON ➝ Object
+const PersonObject = JSON.parse(PersonJSON);
+console.log(PersonObject);
