@@ -21,5 +21,18 @@ I am learning Full Stack Development and regularly updating this repository with
 - Understanding function expressions
 - How JavaScript executes functions using the call stack
 
+## Hoisting in JavaScript (Functions)
+
+Hoisting is JavaScript's behavior of moving declarations to the top of their scope
+during the memory creation phase.
+
+### Function Declaration (Hoisted)
+Function declarations are fully hoisted, so they can be called before definition.
+
+### Function Expression & Arrow Function (Not Hoisted)
+Function expressions and arrow functions behave like variables and cannot be
+called before initialization.
+
+
 ## 📂 File Structure
 
